@@ -1,0 +1,27 @@
+{
+  "name": "noto-emoji-dotlottie",
+  "version": "1.0.0",
+  "description": "A tool to download and convert Noto Emoji animations to .lottie format.",
+  "type": "module",
+  "scripts": {
+    "build": "./download_noto.sh",
+    "convert": "node dotlottie-cli.js"
+  },
+  "dependencies": {
+    "@dotlottie/dotlottie-js": "^1.3.1",
+    "cli-progress": "^3.12.0"
+  },
+  "author": "Quarrel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quarrel/noto-emoji-dotlottie.git"
+  },
+  "keywords": [
+    "noto",
+    "emoji",
+    "dotlottie",
+    "lottie",
+    "animation"
+  ]
+}
