@@ -2,7 +2,14 @@
 
 This repository provides a simple way to download the latest animated emoji from the [Noto Emoji Animation project](https://googlefonts.github.io/noto-emoji-animation/) and convert them into both individual `.lottie` files and a single combined `all.lottie` file.
 
-The primary goal of this project is to make these excellent, open-licensed animations easily accessible in the modern `.lottie` format, along with the Google provided Lottie `.json` files.
+The primary goal of this project is to make these excellent, open-licensed animations easily accessible in the modern [dotLottie](https://dotlottie.io/) / `.lottie` format, along with the Google provided Lottie `.json` files.
+
+All files that the scripts below generate are included for conveniance.
+
+See:
+
+-   `noto-anim-lottie.json/`
+-   `noto-anim.lottie/`
 
 ## Features
 
@@ -21,17 +28,20 @@ The primary goal of this project is to make these excellent, open-licensed anima
 ## Usage
 
 1.  **Clone the repository:**
+
     ```bash
     git clone https://github.com/quarrel/noto-emoji-dotlottie.git
     cd noto-emoji-dotlottie
     ```
 
 2.  **Run the download and build script:**
+
     ```bash
     ./download_noto.sh
     ```
 
     This script will:
+
     1.  Fetch the list of all available animations.
     2.  Download the source `.json` for each animation into the `noto-anim-lottie.json/` directory.
     3.  Install the necessary Node.js dependencies.
